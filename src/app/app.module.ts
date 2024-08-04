@@ -25,6 +25,8 @@ import { ProfileComponent } from './pages/profile/profile.component';
 import { MatCardModule } from '@angular/material/card';
 import { FormsModule } from '@angular/forms';
 import { TimetableComponent } from './pages/timetable/timetable.component';
+import {MatGridListModule} from '@angular/material/grid-list';
+
 
 // Import FormsModule
 @NgModule({
@@ -53,7 +55,8 @@ import { TimetableComponent } from './pages/timetable/timetable.component';
     MatButtonModule,
     MatCardModule,
     FormsModule,
-    MatTableModule
+    MatTableModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,63 @@
+mat-grid-tile {
+    background-color: #f1f0eb;
+
+}
+.mat-grid-tile .mat-figure {
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+ }
+
+ .container {
+    padding : 0 1em !important;
+    max-width: 60rem !important;
+    margin: 0 auto !important;
+    overflow-x:auto !important;
+ }
+
+ .zoom {
+    padding: 50px;
+    transition: transform .2s; /* Animation */
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  
+  .zoom:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+  
+  .button{
+  margin-top: 30px;
+  position: absolute;
+  background: #ffd814;
+  border-color: #ffd814;
+  color: black;
+  user-select: none;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  min-width: 100px;
+  border: none;
+  outline: none;
+  line-height: inherit;
+  overflow: visible;
+  vertical-align: middle;
+  border-radius: 12px;
+
+  }
+  input[type=text] {
+   width: 90%;
+   box-sizing: border-box;
+   border: 2px solid #ccc;
+   border-radius: 4px;
+   font-size: 16px;
+   background-color: white;
+  // background-image: url('/assets/searchicon.png');
+   background-position: 10px 10px; 
+   background-repeat: no-repeat;
+   padding: 12px 20px 12px 40px;
+ }
+ 
+

@@ -10,8 +10,10 @@ import { SidebarComponent } from '../sidenav/sidenav.component';
 })
 export class HeaderComponent  {
 
-  constructor(private sidebarService: SidebarService) {}
-
+  constructor(private sidebarService: SidebarService) {
+    this.ImagePath = 'assets/logo.jpg'
+  }
+  ImagePath: string; 
   toggleSidebar() {
   // Check if the button click event is registered
     this.sidebarService.toggleSidebar();

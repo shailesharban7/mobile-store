@@ -1,1 +1,37 @@
-<p>home works!</p>
+
+<div style="width:100%;">
+   <input type="text" name="search" placeholder="Search.."   [(ngModel)]="searchText">  <input type="button" value="Buy Now" class="button" > 
+ </div>
+<ng-container class="container" *ngFor="let a of mobileData" style="overflow-x: auto;">
+
+<mat-grid-list cols="2" rowHeight="1.5:1">
+   <mat-grid-tile><span><img src="{{a.productImageUrl}}" alt="logo"> </span></mat-grid-tile>
+   <mat-grid-tile><div>
+      <div>
+      <span style="font-weight: bold ;font-size: 20px;"> {{a.productDescription}}</span>
+      </div>
+      <div *ngIf="a.productAbout1 || a.productAbout3 || a.productAbout3">
+         <span style="font-weight: bold ;"> About Product </span> :
+          <ul><li *ngIf="a.productAbout1"> {{a.productAbout1}}</li>
+            <li *ngIf="a.productAbout2"> {{a.productAbout2}}</li>
+            <li *ngIf="a.productAbout3"> {{a.productAbout3}} <a href= "{{a.productUrl}}" style="text-decoration: none;">more...</a></li>
+         </ul><span> </span>
+      </div>
+      <div>
+         <span style="font-weight: bold ;">Actual Price</span> : <span><del> {{a.actualPrice}} </del></span>
+      </div>
+      <div>
+         <span  style="font-weight: bold ;" >Buy Price</span> : <span> {{a.discountedPrice}} </span>
+      </div>
+      <div>
+         <span>Discount</span> : <span style="font-weight: bold ; color: red;"> {{a.perOffer}} </span>
+      </div>
+      <div>                                                                         
+             
+         <a href="{{a.productUrl}}"> <input type="button" value="Buy Now" class="button" >    </a>
+      </div>
+      
+     </div></mat-grid-tile>
+ </mat-grid-list>
+
+</ng-container>
