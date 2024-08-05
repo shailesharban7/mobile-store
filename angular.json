@@ -27,6 +27,9 @@
             "inlineStyleLanguage": "scss",
             "assets": [
              "src/assets",
+             "src/js",
+             "src/images",
+             "src/css",
               {
                 "glob": "**/*",
                 "input": "public"
@@ -34,7 +37,9 @@
             ],
             "styles": [
               "node_modules/font-awesome/css/font-awesome.min.css",
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/css/animate.min.css",
+              "src/css/style.css"
             ],
             "scripts": [
             
@@ -99,7 +104,11 @@
               "src/styles.scss"
             ],
             "scripts": [
-           
+           "src/app/js/jquery.min.js",
+	"src/app/js/popper.min.js",
+	"src/app/js/bootstrap.bundle.min.js",
+	"src/app/js/jquery-3.0.0.min.js",
+	"src/app/js/plugin.js"
             ]
           }
         }

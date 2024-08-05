@@ -1,1 +1,27 @@
+a {
+    color: blue !important;
+    text-decoration: none;
+    outline: none !important;
+}
 
+.button{
+    margin-top: 30px;
+    position: absolute;
+    background: #ffd814;
+    border-color: #ffd814;
+    color: black;
+    user-select: none;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    min-width: 100px;
+    border: none;
+    outline: none;
+    line-height: inherit;
+    overflow: visible;
+   // vertical-align: middle;
+    border-radius: 12px;
+  
+    }

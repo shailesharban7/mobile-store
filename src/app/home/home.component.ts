@@ -25,7 +25,7 @@ export class HomeComponent implements OnInit {
 
   search(){
 
-    this.mobileData = this.mobileData.filter(x=>x.productDescription == this.searchText)
+    this.mobileData = this.mobileData.filter(x=>x.productDescription === this.searchText)
 
   }
 

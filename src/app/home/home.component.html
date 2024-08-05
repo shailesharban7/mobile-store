@@ -1,6 +1,6 @@
 
-<div style="width:100%;">
-   <input type="text" name="search" placeholder="Search.."   [(ngModel)]="searchText">  <input type="button" value="Buy Now" class="button" > 
+<div style="width:100%;margin-bottom: 10px;">
+   <input type="text" name="search" placeholder="Search.."   [(ngModel)]="searchText">  <mat-icon aria-hidden="false" aria-label="Example home icon" (click)="search()" class="search-button" fontIcon="search"></mat-icon>
  </div>
 <ng-container class="container" *ngFor="let a of mobileData" style="overflow-x: auto;">
 
