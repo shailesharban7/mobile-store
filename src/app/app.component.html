@@ -47,20 +47,20 @@
                   <div class="box_main active">
                      <div class="row">
                      <div class="col-sm-5">
-                        <img src="assets/RedmiNote13.jpg">
+                        <img src="assets/{{a.productImageUrl}}.jpg">
                      </div>
                      <div class="col-sm-7">
                         <h4 class="development_text">{{a.productName}}</h4>
                         <span> {{a.productDescription}} </span><a href="{{a.productUrl}}">Read More..</a>
                         <div>
-                           <span style="font-weight: bold ;">Actual Price</span> : <span><del> {{a.actualPrice}} </del></span>
+                           <span style="font-weight: bold ;">M. R. P. </span> : <span><del> {{a.actualPrice}} </del></span>
                         </div>
                         <div>
                            <span  style="font-weight: bold ;" >Buy Price</span> : <span> {{a.discountedPrice}} </span>
                         </div>
-                        <div>
+                        <!-- <div>
                            <span style="font-weight: bold ;">Discount</span> : <span style="font-weight: bold ; color: red;"> {{a.perOffer}} </span>
-                        </div>
+                        </div> -->
                         <div>                                                                         
                                
                            <a href="{{a.productUrl}}"> <input type="button" value="Buy Now" class="button" >    </a>
